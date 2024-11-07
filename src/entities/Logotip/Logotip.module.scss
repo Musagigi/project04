@@ -1,0 +1,41 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.35s;
+  z-index: 1000;
+
+  &:hover {
+    background-color: var(--color-gray-01);
+  }
+
+  &:active {
+    background-color: var(--color-white);
+  }
+
+  &__text {
+    font-family: var(--font-family-onest-bold);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--color-total-black);
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 112px;
+    height: 28px;
+    border-radius: 7px;
+
+    &__text {
+      font-size: 16px;
+      letter-spacing: 0.55px;
+    }
+  }
+}

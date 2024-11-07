@@ -1,0 +1,37 @@
+.info-detail {
+  padding: 32px 40px 32px 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__bulit {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    word-break: break-word;
+    white-space: pre;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-detail {
+    padding: 24px 20px 20px 24px;
+
+    &__bulit {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-detail {
+    padding: 24px;
+  }
+}

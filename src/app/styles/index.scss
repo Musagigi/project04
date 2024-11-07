@@ -1,0 +1,48 @@
+@import 'reset';
+@import 'variables/global';
+@import 'themes/common';
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #1d1d1b;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--color-gray-03);
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,14 @@
+.privacy {
+  margin-top: 32px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+
+  &__box {
+    width: 13px;
+  }
+
+  &__label {
+    flex: 1 2 438px;
+  }
+}

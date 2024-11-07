@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'OnestBold';
+  src:
+    local('OnestBold'),
+    url('src/app/styles/fonts/Onest/Onest-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'OnestMedium';
+  src:
+    local('OnestMedium'),
+    url('src/app/styles/fonts/Onest/Onest-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'OnestRegular';
+  src:
+    local('OnestRegular'),
+    url('src/app/styles/fonts/Onest/Onest-Regular.woff2') format('woff2');
+}
+
+:root {
+  --font-family-onest-bold: 'OnestBold';
+  --font-family-onest-medium: 'OnestMedium';
+  --font-family-onest-regular: 'OnestRegular';
+
+  --font-size-bold-h1: 80px;
+  --font-line-bold-h1: 88px;
+
+  --font-size-bold-h2: 32px;
+  --font-line-bold-h2: 38.4px;
+
+  --font-size-bold-h3: 24px;
+  --font-line-bold-h3: 32px;
+
+  --font-bold-h1: var(--font-size-bold-h1) / var(--font-line-bold-h1)
+    var(--font-family-onest-bold);
+
+  --font-bold-h2: var(--font-size-bold-h2) / var(--font-line-bold-h2)
+    var(--font-family-onest-bold);
+
+  --font-bold-h3: var(--font-size-bold-h3) / var(--font-line-bold-h3)
+    var(--font-family-onest-bold);
+
+  --font-regular-h3: var(--font-size-bold-h3) / var(--font-line-bold-h3)
+    var(--font-family-onest-regular);
+
+  --font-size-bold-button: 14px;
+  --font-line-bold-button: 24px;
+
+  --font-button: var(--font-size-bold-button) / var(--font-line-bold-button)
+    var(--font-family-onest-bold);
+
+  --font-size-regular-text1: 22px;
+  --font-line-regular-text1: 32px;
+
+  --font-size-regular-text2: 18px;
+  --font-line-regular-text2: 22px;
+
+  --font-size-regular-text3: 14px;
+  --font-line-regular-text3: 20px;
+
+  --paragraph22_regular: var(--font-size-regular-text1) /
+    var(--font-line-regular-text1) var(--font-family-onest-regular);
+
+  --paragraph18_regular: var(--font-size-regular-text2) /
+    var(--font-line-regular-text2) var(--font-family-onest-regular);
+
+  --paragraph14_regular: var(--font-size-regular-text3) /
+    var(--font-line-regular-text3) var(--font-family-onest-regular);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-bold-h1: 52px;
+    --font-line-bold-h1: 57.2px;
+
+    --font-size-bold-h2: 28px;
+    --font-line-bold-h2: 33.6px;
+
+    --font-size-bold-h3: 16px;
+    --font-line-bold-h3: 20.4px;
+
+    --font-button: var(--font-size-bold-button) / var(--font-line-bold-button)
+      var(--font-family-onest-medium);
+
+    --font-size-regular-text1: 14px;
+    --font-line-regular-text1: 20px;
+
+    --font-size-regular-text2: 12px;
+    --font-line-regular-text2: 16px;
+
+    --font-bold-text1: var(--font-size-regular-text1) /
+      var(--font-line-regular-text1) var(--font-family-onest-bold);
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --font-size-bold-h1: 36px;
+    --font-line-bold-h1: 39.6px;
+
+    --font-size-bold-h2: 24px;
+    --font-line-bold-h2: 30.6px;
+
+    --font-size-bold-h3: 20px;
+    --font-line-bold-h3: 25.5px;
+
+    --font-size-regular-text1: 16px;
+    --font-line-regular-text1: 20.4px;
+
+    --font-size-regular-text2: 14px;
+    --font-line-regular-text2: 17.85px;
+
+    --font-size-bold-button: 12px;
+    --font-line-bold-button: 15px;
+  }
+}

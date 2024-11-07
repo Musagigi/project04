@@ -1,0 +1,23 @@
+.input {
+  width: 100%;
+  padding: 10px 0 18px 0;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-gray-01);
+  font: var(--paragraph18_regular);
+
+  &:focus {
+    border-color: var(--color-black);
+  }
+
+  &::placeholder {
+    color: var(--color-black);
+  }
+}
+
+.error__input {
+  border-color: var(--color-error);
+}
+
+.error__text {
+  color: var(--color-error);
+}

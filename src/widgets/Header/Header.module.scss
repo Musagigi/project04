@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    gap: 5px;
+    padding-top: 32px;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 1440px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--color-gray-03);
+    }
+  }
+
+  &__menu {
+    button {
+      display: none;
+    }
+  }
+}
+
+.navigation {
+  ul {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 17px;
+
+    &__content {
+      padding: 14px 10px;
+      max-width: 688px;
+      position: relative;
+
+      &::before {
+        background-color: transparent;
+      }
+    }
+
+    &__menu {
+      button {
+        display: block;
+        position: relative;
+      }
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 1130px;
+    background-color: var(--color-white);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s linear;
+
+    ul {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform 0.5s linear;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 0;
+    background-color: var(--color-gray-03);
+
+    &__content {
+      padding: 16px 0px;
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 568px;
+    background-color: var(--color-white);
+    transition: right 0.5s linear;
+
+    ul {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.active {
+      right: 0;
+      transition: right 0.5s linear;
+    }
+  }
+}

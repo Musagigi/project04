@@ -1,0 +1,22 @@
+.list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item {
+    display: flex;
+    gap: 20px;
+
+    &_bulit {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    gap: 15px;
+  }
+}

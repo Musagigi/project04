@@ -1,0 +1,72 @@
+.section1 {
+  position: relative;
+  padding-top: 210px;
+  // height: 100vh;
+  min-height: 1070px;
+  z-index: 1;
+  @include maxWidth(
+    url('/src/shared/assets/images/hero.webp') center top 112px no-repeat,
+    var(--color-gray-03)
+  );
+
+  &__content {
+    width: 100%;
+
+    &_subtitle {
+      max-width: 626px;
+      margin-top: 32px;
+    }
+
+    &_button {
+      margin-top: 80px;
+      max-width: 210px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section1 {
+    padding-top: 169px;
+    min-height: 730px;
+
+    &::before {
+      background-position-y: -60px;
+      background-position-x: 0px;
+    }
+
+    &__content_subtitle {
+      font: var(--paragraph22_regular);
+    }
+
+    &__content_button {
+      margin-top: 60px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section1 {
+    padding-top: 112px;
+    min-height: 545px;
+
+    &::before {
+      background-position-y: 20px;
+      background-position-x: -560px;
+      background-size: cover;
+    }
+
+    &__content {
+      margin-top: 48px;
+
+      &_subtitle {
+        margin-top: 32px;
+      }
+
+      &_button {
+        max-width: 100%;
+        margin-top: 112px;
+      }
+    }
+  }
+}
